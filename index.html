@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrifted & Thriving | Thrifting Guide</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #29352d;
+            background-color: #f7f4ed;
+        }
+
+        header {
+            background-color: #314b3b;
+            color: white;
+            padding: 18px 20px 0;
+        }
+
+        .notice {
+            max-width: 1100px;
+            margin: 0 auto 18px;
+            font-size: 0.82rem;
+            text-align: center;
+            color: #f4f0e5;
+        }
+
+        .site-header {
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 18px;
+        }
+
+        .site-header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        .site-header p {
+            margin: 5px 0 0;
+            color: #dce6dc;
+        }
+
+        nav {
+            background-color: #e5e0d2;
+        }
+
+        nav ul {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            display: block;
+            padding: 14px 18px;
+            color: #29352d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #c9d5c7;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 45px 20px;
+        }
+
+        .hero {
+            background-color: #dfe8dc;
+            border-radius: 14px;
+            padding: 45px 35px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.1rem;
+            margin: 0 0 12px;
+            color: #314b3b;
+        }
+
+        .hero p {
+            max-width: 720px;
+            margin: 0 auto 22px;
+            font-size: 1.08rem;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #314b3b;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #24382c;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 45px 0 25px;
+            color: #314b3b;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd7c9;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #526b56;
+        }
+
+        .card a {
+            color: #314b3b;
+            font-weight: bold;
+        }
+
+        .intro {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #314b3b;
+            color: #f4f0e5;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            max-width: 900px;
+            margin: 5px auto;
+            font-size: 0.82rem;
+        }
+
+        @media (max-width: 700px) {
+            .site-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero {
+                padding: 32px 20px;
+            }
+
+            .hero h2 {
+                font-size: 1.7rem;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                padding: 11px 12px;
+                font-size: 0.9rem;
+            }
+
+            main {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <p class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
+
+    <div class="site-header">
+        <h1>Thrifted &amp; Thriving</h1>
+        <p>Your friendly guide to finding great secondhand treasures.</p>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="easy-thrifting-guide.html">Easy Thrifting Guide</a></li>
+        <li><a href="thrifting-tips.html">Tips &amp; Tricks</a></li>
+        <li><a href="thrift-store-guide.html">Thrift Store Guide</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="hero">
+        <h2>Thrifting Made Simple</h2>
+        <p>
+            Thrifting can feel overwhelming when you walk into a store filled with hundreds
+            of racks and shelves. Thrifted &amp; Thriving makes it easier with practical advice
+            for finding clothes you love, staying within your budget, and making secondhand
+            shopping more enjoyable.
+        </p>
+        <a class="button" href="easy-thrifting-guide.html">Start the Guide</a>
+    </section>
+
+    <h2 class="section-title">What You'll Find Here</h2>
+
+    <p class="intro">
+        Whether you have never stepped into a thrift store or you are trying to become a
+        more strategic thrifter, these three guides will help you shop with confidence.
+    </p>
+
+    <section class="cards">
+        <article class="card">
+            <h3>Easy Thrifting Guide for Beginners</h3>
+            <p>
+                Learn the basics, from deciding what you want to find to checking an item
+                before you buy it.
+            </p>
+            <a href="easy-thrifting-guide.html">Read the beginner guide →</a>
+        </article>
+
+        <article class="card">
+            <h3>Thrifting Tips &amp; Tricks</h3>
+            <p>
+                Discover simple strategies for saving time, spotting quality pieces,
+                comparing prices, and avoiding purchases you will regret.
+            </p>
+            <a href="thrifting-tips.html">See the tips →</a>
+        </article>
+
+        <article class="card">
+            <h3>Thrift Store Guide</h3>
+            <p>
+                Get a practical overview of different types of thrift stores and learn
+                how to choose the right store for what you are looking for.
+            </p>
+            <a href="thrift-store-guide.html">Explore the guide →</a>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
+    <p>&copy; 2026 Thrifted &amp; Thriving</p>
+</footer>
+
+</body>
+</html>
