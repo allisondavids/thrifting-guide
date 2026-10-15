@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Store Guide | Thrifted & Thriving</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #29352d;
+            background-color: #f7f4ed;
+        }
+
+        header {
+            background-color: #314b3b;
+            color: white;
+            padding: 18px 20px 0;
+        }
+
+        .notice {
+            max-width: 1100px;
+            margin: 0 auto 18px;
+            font-size: 0.82rem;
+            text-align: center;
+            color: #f4f0e5;
+        }
+
+        .site-header {
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 18px;
+        }
+
+        .site-header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        .site-header p {
+            margin: 5px 0 0;
+            color: #dce6dc;
+        }
+
+        nav {
+            background-color: #e5e0d2;
+        }
+
+        nav ul {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            display: block;
+            padding: 14px 18px;
+            color: #29352d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #c9d5c7;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 45px 20px;
+        }
+
+        .page-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .page-heading h2 {
+            color: #314b3b;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .page-heading p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .store-types {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .store-card {
+            background-color: white;
+            border: 1px solid #ddd7c9;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .store-card h3 {
+            color: #526b56;
+            margin-top: 0;
+        }
+
+        .store-card p {
+            margin-bottom: 10px;
+        }
+
+        .good-for {
+            font-weight: bold;
+            color: #314b3b;
+        }
+
+        .strategy {
+            background-color: #dfe8dc;
+            border-radius: 10px;
+            padding: 28px;
+            margin-top: 35px;
+        }
+
+        .strategy h3 {
+            color: #314b3b;
+            margin-top: 0;
+        }
+
+        .strategy ol {
+            padding-left: 22px;
+        }
+
+        .store-day {
+            background-color: white;
+            border-left: 5px solid #526b56;
+            padding: 20px 25px;
+            margin-top: 22px;
+        }
+
+        .store-day h3 {
+            margin-top: 0;
+            color: #526b56;
+        }
+
+        footer {
+            background-color: #314b3b;
+            color: #f4f0e5;
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        footer p {
+            max-width: 900px;
+            margin: 5px auto;
+            font-size: 0.82rem;
+        }
+
+        @media (max-width: 700px) {
+            .site-header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                padding: 11px 12px;
+                font-size: 0.9rem;
+            }
+
+            main {
+                padding: 30px 15px;
+            }
+
+            .page-heading h2 {
+                font-size: 1.7rem;
+            }
+
+            .store-types {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <p class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
+
+    <div class="site-header">
+        <h1>Thrifted &amp; Thriving</h1>
+        <p>Your friendly guide to finding great secondhand treasures.</p>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="easy-thrifting-guide.html">Easy Thrifting Guide</a></li>
+        <li><a href="thrifting-tips.html">Tips &amp; Tricks</a></li>
+        <li><a href="thrift-store-guide.html">Thrift Store Guide</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="page-heading">
+        <h2>Thrift Store Guide</h2>
+        <p>
+            Not every thrift store is the same. Understanding the different types of
+            secondhand shops can help you decide where to spend your time.
+        </p>
+    </section>
+
+    <section class="store-types">
+        <article class="store-card">
+            <h3>Traditional Thrift Stores</h3>
+            <p>
+                These stores usually sell donated clothing, accessories, household goods,
+                books, and other everyday items. Prices are often affordable and inventory
+                can change quickly.
+            </p>
+            <p class="good-for">Good for: budget-friendly everyday finds.</p>
+        </article>
+
+        <article class="store-card">
+            <h3>Charity Shops</h3>
+            <p>
+                Charity-focused stores sell donated merchandise to support a nonprofit or
+                community organization. You can find clothing and household items while
+                supporting the store's broader mission.
+            </p>
+            <p class="good-for">Good for: affordable shopping with a community purpose.</p>
+        </article>
+
+        <article class="store-card">
+            <h3>Consignment Shops</h3>
+            <p>
+                Consignment stores generally accept items from individuals and sell them
+                on the owner's behalf. The selection may be more curated, and prices can
+                be higher than at traditional thrift stores.
+            </p>
+            <p class="good-for">Good for: curated clothing and recognizable brands.</p>
+        </article>
+
+        <article class="store-card">
+            <h3>Vintage Stores</h3>
+            <p>
+                Vintage shops focus on older clothing and accessories selected for their
+                style, history, quality, or uniqueness. These stores often have a more
+                specialized selection and higher prices.
+            </p>
+            <p class="good-for">Good for: distinctive pieces and vintage fashion.</p>
+        </article>
+
+        <article class="store-card">
+            <h3>Resale Boutiques</h3>
+            <p>
+                Resale boutiques often specialize in contemporary clothing, accessories,
+                and popular brands. The merchandise is typically selected more carefully
+                than in a large donation-based store.
+            </p>
+            <p class="good-for">Good for: modern styles and specific brands.</p>
+        </article>
+
+        <article class="store-card">
+            <h3>Online Thrift &amp; Resale</h3>
+            <p>
+                Online marketplaces allow shoppers to search for specific brands, sizes,
+                colors, and styles without traveling from store to store. The trade-off is
+                that shipping costs and limited ability to inspect an item can affect the deal.
+            </p>
+            <p class="good-for">Good for: targeted searches and hard-to-find pieces.</p>
+        </article>
+    </section>
+
+    <section class="strategy">
+        <h3>How to Choose the Right Store</h3>
+        <ol>
+            <li>
+                <strong>Start with your goal.</strong> Decide whether you want inexpensive
+                basics, vintage pieces, name brands, home goods, or something specific.
+            </li>
+            <li>
+                <strong>Match your budget.</strong> If you are trying to spend as little as
+                possible, start with traditional thrift or charity stores.
+            </li>
+            <li>
+                <strong>Think about your time.</strong> Large thrift stores may have more
+                inventory but require more searching. Smaller shops may have fewer items
+                but a more focused selection.
+            </li>
+            <li>
+                <strong>Try multiple stores.</strong> Your favorite store may not be the
+                same as someone else's. Visit different types to learn which ones match
+                your shopping style.
+            </li>
+        </ol>
+    </section>
+
+    <section class="store-day">
+        <h3>Make a Thrift Store Day Out of It</h3>
+        <p>
+            If you have several secondhand stores nearby, plan a route and give yourself
+            a spending limit for the entire trip. Keep a note on your phone with stores
+            you have visited and what each one tends to carry. Over time, you will learn
+            which stores are best for jeans, which have the best home goods, and which are
+            worth checking when you want something unusual.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
+    <p>&copy; 2026 Thrifted &amp; Thriving</p>
+</footer>
+
+</body>
+</html>
