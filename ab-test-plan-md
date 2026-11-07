@@ -1,0 +1,20 @@
+The page and the single element you are changing, with the text or a description of A and B
+•	The single element I am changing is the subhead that is located underneath the headline on the homepage because it’s the most important paragraph on my website because it describes what my website is and what you’ll find on it.
+•	Current Subhead (A): Thrifting can feel overwhelming when you walk into a store filled with hundreds of racks and shelves. Thrifted & Thriving makes it easier with practical advice for finding clothes you love, staying within your budget, and making secondhand shopping more enjoyable.
+•	New Subhead (B): Thrifting can feel overwhelming when you walk into a store filled with hundreds of racks and shelves, especially when you aren't sure where to start or what to look for. Thrifted & Thriving is here to help you navigate secondhand shopping with confidence by offering practical tips, helpful guides, and advice for finding clothes you love, discovering unique pieces, staying within your budget, and making the most of every thrift trip.
+Your hypothesis, written as a prediction that could turn out wrong, and the reasoning behind it.
+•	If I change the subhead on my homepage to be longer to provide more information about what information is on website, then the bounce rate will decrease because visitors will be more interested in reading the other pages on my website instead of clicking off the homepage. The reasoning behind this hypothesis is to understand if visitors who have more information regarding my website are more likely to leave or continue reading. 
+The model, the persona, the exact prompt, and how each trial is assigned to A or B.
+•	ChatGPT, GPT-6, Plan: Free, Date: November 7th, Settings: Memory off, Web search off, Reference record history off,
+•	Prompt: You are about to go thrifting but feel overwhelmed about how cluttered and big the thrift store is. Read this subhead and decide whether you are going to continue reading the information on the website this subhead is on. Answer yes or no, then give one sentence of reasoning. [paste the text of version A or version B] 
+•	If the model replies with “yes” the outcome will be recorded as 1 and if the model replies with “no” the outcome will be recorded as 0. In the case that the model replies with “maybe” then it will be recorded as 0 for only answers that equal “yes” scores as 1.
+•	Each trial is assigned to A or B by using Excel RANDBETWEEN function 
+Your one primary outcome and how it is measured.
+•	The primary outcome is the conversion, the share of users who answer “yes” that would continue reading the information located on my website
+•	This will be measured by comparing the number of users, what version of the subhead they read, and the number of users who read further to achieve the conversion percentage between the two groups (A and B) to then find the difference in percentage points. 
+The sample size you will reach before stopping, and the date you expect to reach it.
+•	The sample size I will reach before stopping is 125 trials in order to meet the minimum requirement of 50 trials in each version.
+•	I expect to reach this by December 3rd when my project is due. 
+The comparison you will make, and what result would count as support for your hypothesis.
+•	The comparison is whether people are more likely to continue reading based on a short or longer subhead containing the information about what my website is and what information you will find on it.
+•	The result that would count as support for my hypothesis would look like visitors who land on page B would continue reading.
